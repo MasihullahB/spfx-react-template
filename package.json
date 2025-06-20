@@ -1,0 +1,13 @@
+{
+  "name": "spfx-react-template-root",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1"
+  },
+  "scripts": {
+    "changeset": "changeset",
+    "version-packages": "changeset version && pnpm install",
+    "release": "changeset publish"
+  }
+}
